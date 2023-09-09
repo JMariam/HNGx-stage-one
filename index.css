@@ -10,8 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    height: 100vh;
+   
 }
 p{
     font-size: 1rem;
@@ -41,12 +40,14 @@ img{
     
 }
 .left h1{
-    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
 }
-.group{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+.left h2{
+    font-size: 2rem;
+}
+a{
+    
+    color: black;
 }
 .dayTime{
     display: grid;

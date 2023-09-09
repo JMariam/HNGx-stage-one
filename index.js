@@ -1,14 +1,16 @@
 const time = document.getElementById('time');
-const day = document.getElementById('day');
+const d = new Date();
+const day = d.getDay()
+
+// current day of the week
+const dayList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+document.getElementById('day').innerHTML = dayList[day]
+
+// UTCTime in milliseconds
+time.innerHTML = d.getTime();
 
 
-setInterval(() => {
-    let d = new Date();
-    time.innerHTML = d.getTime();
-
-
-    day.innerHTML = d.toDateString()
-}, 1000);
     
 
 
