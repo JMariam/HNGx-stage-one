@@ -1,5 +1,3 @@
-const time = document.getElementById('time');
-
 setInterval(() => {
 const d = new Date();
 const day = d.getDay()
@@ -11,7 +9,18 @@ document.getElementById('day').innerHTML = dayList[day]
 
 // UTCTime in milliseconds
 
-    time.innerHTML = Date.now();
+    const hour = d.getUTCHours();
+    const minutes = d.getUTCMinutes();
+    const seconds = d.getUTCSeconds();
+    const milliSeconds = d.getUTCMilliseconds();
+
+    const currentUTCTime = 
+    hour * 3600000 +
+    minutes * 60000 + 
+    seconds * 1000 +
+    milliSeconds;
+
+    document.getElementById('time').innerHTML = currentUTCTime
 }, 1000);
 
 
