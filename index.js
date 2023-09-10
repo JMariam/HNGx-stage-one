@@ -9,7 +9,7 @@ document.getElementById('day').innerHTML = dayList[day]
 
 // UTCTime in milliseconds
 
-    document.getElementById('time').innerHTML = d.toUTCString() 
+    document.getElementById('time').innerHTML = d.getTime() 
 }, 1000);
 
 
