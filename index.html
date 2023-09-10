@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>HNGx Stage-1</title>
 </head>
 <body>
     <div class="box">
         <div class="left">
-            <h1 data-testid="slackUserName">Mariam Jubril</h1>
-            <h2 data-testid="myTrack">Frontend</h2>
-            <a href="https://github.com/JMariam/HNGx-stage-one" data-testid="githubURL">Github URL</a>
+            <div class="group">
+                <p>Name:</p>
+                <h1 data-testid="slackUserName">Mariam Jubril</h1>
+            </div>
+            <div class="group">
+                <p>Track:</p>
+                <h2 data-testid="myTrack">Frontend</h2>
+            </div>
         <div class="dayTime">
+            <div class="group">
+                <p>Day:</p>
                 <h3 data-testid="CurrentDayOfTheWeek" id="day">Today's Day</h3>
-                <h3 data-testid="currentUTCTime" id="time">00:00:00</h3>   
+            </div>
+            <div class="group">
+                <p>Time:</p>
+                <h3 data-testid="currentUTCTime" id="time">00:00:00</h3>
+            </div>
+                  
         </div>
-        </div>
+        <a href="https://github.com/JMariam/HNGx-stage-one" data-testid="githubURL">Github</a>
+    </div>
             
-        
         <div class="img">
             <img src="./display-photo.jpg" alt="Mariam Jubril" data-testid="slackDisplayImage">
         </div>

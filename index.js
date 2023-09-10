@@ -1,4 +1,6 @@
 const time = document.getElementById('time');
+
+setInterval(() => {
 const d = new Date();
 const day = d.getDay()
 
@@ -8,7 +10,10 @@ const dayList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday
 document.getElementById('day').innerHTML = dayList[day]
 
 // UTCTime in milliseconds
-time.innerHTML = d.getTime();
+
+    time.innerHTML = Date.now();
+}, 1000);
+
 
 
     
